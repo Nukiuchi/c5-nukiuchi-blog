@@ -1,0 +1,2 @@
+Nukiuchi Theme
+Theme made for Nukiuchi Blog. Might be reusable.

@@ -25,6 +25,8 @@ class Controller extends Package {
     public function install() {
         $pkg = parent::install();
         
+        
+        
         Single::add('/blog', $pkg);
     }
     
