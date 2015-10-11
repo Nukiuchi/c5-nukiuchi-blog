@@ -1,4 +1,4 @@
-<h1>Blog for Concrete5 5.7.</h1>
+<h1>Blog for Concrete5 version 5.7</h1>
 
 Structured as a package.
 
@@ -9,16 +9,16 @@ Extra focus given for Doctrine ORM and modern, responsive theming.
 
 Is, and probably always will be, Work In Progress.
 
-<h2>Some intended functions:<h2>
+<h2>Some intended functions</h2>
 
-Blog features:
+<h3>Blog features</h3>
 - Single Blog for the environment (Simple Single Page), 
    blog accessible at /blog
 - Multiple blogs (Single Page with possibility to choose displayed blog),
    e.g. /blog/nukiuchi
 - Look into implementing popular features, like tagging, tag cloud
 
-Theme:
+<h3>Theme</h3>
 - Use Bootstrap 3
 - Use built-in LESS
 - Make it look nice (yeah right..)
