@@ -1,15 +1,16 @@
-Blog for Concrete5 5.7.
+<h1>Blog for Concrete5 5.7.</h1>
 
 Structured as a package.
 
 Trying to make use of the new 5.7 features as much as I can,
 to make this work as an example for future projects.
 
-Extra focus given for Doctrine ORM and modern theming.
+Extra focus given for Doctrine ORM and modern, responsive theming.
 
 Is, and probably always will be, Work In Progress.
 
-Some intended functions:
+<h2>Some intended functions:<h2>
+
 Blog features:
 - Single Blog for the environment (Simple Single Page), 
    blog accessible at /blog
