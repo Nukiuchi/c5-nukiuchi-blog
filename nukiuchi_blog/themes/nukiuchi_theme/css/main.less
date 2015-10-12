@@ -1,0 +1,45 @@
+@import "colors";
+
+@background-color: @white;
+@font-color: @black;
+
+@link-color: @light-blue;
+@link-color-hover: darken(@light-blue, @color-mod);
+
+@highlight-background-color: @light-blue;
+@highlight-link-color: @white;
+@highlight-link-color-hover: darken(@white, @color-mod);
+
+@object-background-color: @blue;
+@object-font-color: @white;
+
+@alert-background-color: @red;
+@alert-font-color: @white;
+
+body .ccm-page {
+    background-color: @background-color;
+    color: @font-color;
+    
+    a {
+        color: @link-color;
+    }
+    a:hover {
+        color: @link-color-hover;
+    }
+    
+    .highlight {
+        background-color: @highlight-background-color;
+        
+        a {
+            color: @highlight-link-color;
+        }
+        a:hover {
+            color: @highlight-link-color-hover;
+        }
+    }
+    
+    .object {
+        background-color: @object-background-color;
+        color: @object-font-color;
+    }
+}

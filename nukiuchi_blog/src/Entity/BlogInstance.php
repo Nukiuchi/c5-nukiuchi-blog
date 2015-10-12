@@ -102,14 +102,14 @@ class BlogInstance {
      * @PrePersist()
      */
     public function onPersist() {
-        $this->added(new \DateTime("now"));
-        $this->updated(new \DateTime("now"));
+        $this->setAdded(new \DateTime("now"));
+        $this->setUpdated(new \DateTime("now"));
     }
     
     /**
      * @PreUpdate()
      */
     public function onUpdate() {
-        $this->updated(new \DateTime("now"));
+        $this->setUpdated(new \DateTime("now"));
     }
 }

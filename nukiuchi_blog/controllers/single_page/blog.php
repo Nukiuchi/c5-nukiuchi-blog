@@ -19,12 +19,32 @@ class Blog extends PageController {
         $this->blogService = new BlogService(\ORM::entityManager());
     }
     
-    public function view() {
-        $this->set("TODO", "STILL SOMETHING TO DO: VIEW");
+    public function view($blog = false) {
+        $this->set('debug', true);
+        $this->set('blog', $blog);
+        
+        if($blog) {
+            // TODO: Get blog data.
+        }
     }
     
-    public function add() {
-        $this->set("TODO", "STILL SOMETHING TO DO: ADD");
+    public function add_blog() {
+        $u = new \User();
+        
+        if(is_object($u) && $u->isLoggedIn()) {
+            $author = $u->getUserName();
+            $name = $this->post('name');
+            $descr = $this->post('descr');
+            
+            $blog = $this->blogService->addBlogInstance($name, $author, $descr);
+            if(!is_null($blog)) {
+                return $this->redirect('/blog/' . $author);
+            } else {
+                $this->set('error', 'Blog creation failed, no idea why. Please contact admin.');
+            }
+        } else {
+            $this->set('error', 'Unauthorized to add blog.');
+        }
+        
     }
-    
 }
