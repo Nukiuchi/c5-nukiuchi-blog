@@ -19,6 +19,6 @@ Is, and probably always will be, Work In Progress.
 - Look into implementing popular features, like tagging, tag cloud
 
 <h3>Theme</h3>
-- Use Bootstrap 3
-- Use built-in LESS
+- Use Bootstrap 3 (Done! To an extent, see last item.)
+- Use built-in LESS (Done! As easy as using CSS, write and it works.)
 - Make it look nice (yeah right..)
